@@ -1,0 +1,5 @@
+language: bash # bashで
+script: # 下記のコマンドを実行
+- echo hello
+- echo Travis CI test in .travis.yml
+- ./test_greatest_common_divisor_checker.sh
