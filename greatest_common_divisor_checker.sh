@@ -13,11 +13,11 @@ fi
 
 
 if [ $1 -gt $2 ]; then
-	bigger_num=$1
+	bigger_num=$2
 	smaller_num=$2
 else
 	bigger_num=$2
-	smaller_num=$1
+	smaller_num=$2
 fi
 
 while :
