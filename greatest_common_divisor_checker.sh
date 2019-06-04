@@ -1,10 +1,16 @@
 #!/bin/bash
 
+if [ $# -ne 2 ];then
+    echo "エラー：引数を２個入力して下さい";
+    exit
+fi
+
 expr "$1" + "$2" >&/dev/null 2>&1
 if [ $? -gt 1 ];then
   echo "エラー：整数を入力して下さい"
   exit
 fi
+
 
 if [ $1 -gt $2 ]; then
 	bigger_num=$1
